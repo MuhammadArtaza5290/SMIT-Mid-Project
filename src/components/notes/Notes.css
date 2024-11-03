@@ -1,0 +1,53 @@
+/* Container styling for the Create Notes form */
+.create-notes-container {
+    max-width: 600px;
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Heading styling */
+.create-notes-container h2 {
+    color: #333; /* Darker color for contrast */
+    margin-bottom: 1.5rem;
+}
+
+/* TextField styling for all inputs */
+.create-notes-container .MuiTextField-root {
+    width: 100%; /* Full width for responsiveness */
+    margin-bottom: 1rem; /* Spacing between inputs */
+}
+
+/* Button styling */
+.create-notes-container button {
+    background-color: #1a73e8; /* Blue background */
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+    width: 100%; /* Full width for mobile responsiveness */
+}
+
+/* Button hover effect */
+.create-notes-container button:hover {
+    background-color: #005cb2; /* Darker blue on hover */
+}
+
+/* Responsive styling */
+@media (min-width: 768px) {
+    .create-notes-container {
+        max-width: 500px; /* Constrain width on larger screens */
+    }
+
+    /* Adjust button width for larger screens */
+    .create-notes-container button {
+        width: 50%;
+    }
+}

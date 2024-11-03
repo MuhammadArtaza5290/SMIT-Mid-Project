@@ -1,0 +1,93 @@
+.feed-notes {
+    max-width: 800px; /* Set a maximum width for the container */
+    margin: 20px auto; /* Center the container on the page */
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background color for the notes area */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.feed-title {
+    text-align: center; /* Center the title */
+    color: #333; /* Dark color for contrast */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+.notes-container {
+    display: flex;
+    flex-direction: column; /* Stack notes vertically */
+    gap: 15px; /* Space between note cards */
+}
+
+.note-card {
+    background-color: #fff; /* White background for notes */
+    padding: 15px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow */
+    transition: transform 0.2s; /* Smooth scaling on hover */
+}
+
+.note-card:hover {
+    transform: scale(1.02); /* Slight zoom effect on hover */
+}
+
+.note-title {
+    font-size: 1.5em; /* Larger font for note title */
+    margin: 0; /* Remove default margin */
+    color: #2c3e50; /* Darker color for the title */
+}
+
+.note-content, .note-subject {
+    margin: 5px 0; /* Space between content lines */
+    color: #555; /* Slightly lighter color for content */
+}
+
+.link-container {
+    margin-top: 10px; /* Space above links */
+    display: flex;
+    justify-content: space-between; /* Space links apart */
+}
+
+.edit-link, .delete-link {
+    cursor: pointer; /* Change cursor to pointer on hover */
+    color: #3498db; /* Blue color for edit link */
+    text-decoration: underline; /* Underlined text for links */
+    transition: color 0.2s; /* Smooth color change */
+}
+
+.edit-link:hover {
+    color: #2980b9; /* Darker blue on hover */
+}
+
+.delete-link {
+    color: #e74c3c; /* Red color for delete link */
+}
+
+.delete-link:hover {
+    color: #c0392b; /* Darker red on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .feed-notes {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .note-card {
+        padding: 10px; /* Adjust padding for note cards */
+    }
+
+    .note-title {
+        font-size: 1.3em; /* Slightly smaller title for mobile */
+    }
+
+    .note-content, .note-subject {
+        font-size: 0.9em; /* Smaller content font size for mobile */
+    }
+
+    .link-container {
+        flex-direction: column; /* Stack links vertically on small screens */
+        align-items: flex-start; /* Align links to the start */
+        gap: 5px; /* Space between links */
+    }
+}

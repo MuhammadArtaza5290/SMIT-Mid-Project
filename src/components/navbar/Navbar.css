@@ -1,0 +1,67 @@
+/* Navbar container styling */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    background-color: #000; /* Black background */
+    padding: 1rem; /* Padding for some spacing */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Add Notes button styling */
+.add-btn {
+    background-color: #1a73e8; /* Blue background */
+    color: #fff; /* White text */
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline from Link */
+    transition: background-color 0.3s;
+}
+
+/* Logout button styling */
+button {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for buttons */
+.add-btn:hover,
+button:hover {
+    background-color: #555; /* Darker color on hover */
+}
+
+/* Link styling */
+.add-btn a {
+    color: #fff; /* White text */
+    text-decoration: none;
+}
+
+.add-btn a:hover {
+    color: #ddd; /* Slightly lighter color on hover */
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack items on smaller screens */
+    }
+
+    .add-btn,
+    button {
+        width: 100%; /* Full width buttons on smaller screens */
+        margin-top: 0.5rem; /* Space between buttons */
+    }
+}
